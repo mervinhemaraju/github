@@ -18,11 +18,6 @@ resource "github_branch_protection" "main" {
   require_conversation_resolution = false
 
   required_status_checks {
-    strict   = true
-    contexts = []
-  }
-
-  required_status_checks {
     strict = false
   }
 
