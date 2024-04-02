@@ -20,9 +20,6 @@ resource "github_repository" "this" {
   gitignore_template = var.gitignore_template
 
   security_and_analysis {
-    advanced_security {
-      status = "enabled"
-    }
     secret_scanning {
       status = "enabled"
     }
