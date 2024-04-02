@@ -8,7 +8,7 @@ variable "repository_description" {
 
 variable "repository_visibility" {
   type    = string
-  default = "internal"
+  default = "public"
 }
 
 variable "main_branch" {

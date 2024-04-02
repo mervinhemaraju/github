@@ -19,15 +19,6 @@ resource "github_repository" "this" {
 
   gitignore_template = var.gitignore_template
 
-  security_and_analysis {
-    secret_scanning {
-      status = "enabled"
-    }
-    secret_scanning_push_protection {
-      status = "enabled"
-    }
-  }
-
   allow_update_branch  = true
   vulnerability_alerts = true
 
