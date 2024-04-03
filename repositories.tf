@@ -13,5 +13,7 @@ module "oci_scripts" {
   repository_name        = "oci-scripts"
   repository_description = "Scripts to facilitate management of resources via OCI"
 
+  gitignore_template = "Python"
+
   has_wiki = false
 }
