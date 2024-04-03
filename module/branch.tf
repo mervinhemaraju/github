@@ -16,9 +16,7 @@ resource "github_branch_default" "main" {
 resource "github_branch_protection" "main" {
   repository_id  = github_repository.this.node_id
   pattern        = var.main_branch
-  enforce_admins = true
-
-  allows_force_pushes = true
+  enforce_admins = false
 
   require_conversation_resolution = false
 
