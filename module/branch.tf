@@ -18,6 +18,8 @@ resource "github_branch_protection" "main" {
   pattern        = var.main_branch
   enforce_admins = true
 
+  allows_force_pushes = true
+
   require_conversation_resolution = false
 
   required_status_checks {
