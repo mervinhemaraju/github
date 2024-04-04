@@ -37,3 +37,9 @@ variable "enable_branch_protection" {
   description = "Whether to enable branch protection or not"
   default     = true
 }
+
+variable "has_pages" {
+  type        = bool
+  description = "Whether to enable GitHub Pages or not"
+  default     = false
+}
