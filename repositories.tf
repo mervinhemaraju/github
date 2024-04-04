@@ -155,3 +155,111 @@ module "mauritius_retail_store_api" {
 
   has_wiki = false
 }
+
+module "mes" {
+  source = "./module"
+
+  name        = "m.e.s"
+  description = "This is the official Github Repo of M.E.S (Mauritius Emergency Services), an Android application that has a list of all emergency phone services available in Mauritius."
+
+  has_wiki = false
+}
+
+module "multipurpose_scripts" {
+  source = "./module"
+
+  name        = "multipurpose-scripts"
+  description = "This repository contains different quick scripts for different tasks and purposes."
+
+  has_wiki = false
+}
+
+module "lockme" {
+  source = "./module"
+
+  name        = "lockme"
+  description = "An android application that allows you to lock your phone without using the physical button on your device."
+
+  has_wiki = false
+}
+
+module "jeeyah" {
+  source = "./module"
+
+  name        = "jeeyah"
+  description = "The website for Jeeyah <3"
+
+  visibility = "private"
+
+  enable_branch_protection = false
+
+  has_wiki = false
+}
+
+module "ldap3_ad_leavers" {
+  source = "./module"
+
+  name        = "ldap3-ad-leavers"
+  description = "This is an extension of the ldap3 library which provides utilities to off board a user from AD."
+
+  has_wiki = false
+}
+
+module "freshservice_sdk_python" {
+  source = "./module"
+
+  name        = "freshservice-sdk-python"
+  description = "It is an unofficial Freshservice SDK written in Python."
+
+  has_wiki = false
+}
+
+module "client_fadil_supermarket_app" {
+  source = "./module"
+
+  name        = "client-fadil-supermarket-app"
+  description = "This is a client project for Fadil from LBN who needs to build a simple console supermarket app with Python."
+
+  visibility = "private"
+
+  enable_branch_protection = false
+
+  has_wiki = false
+}
+
+module "snappy" {
+  source = "./module"
+
+  name        = "snappy"
+  description = "Snappy is a Python library that facilitates taking snapshots on EBS."
+
+  has_wiki = false
+}
+
+module "freshtasks" {
+  source = "./module"
+
+  name        = "freshtasks"
+  description = "Freshtasks is a python library that facilitates the manipulation of tasks associated with Freshservice"
+
+  has_wiki = false
+}
+
+module "checkpoint_automation" {
+  source = "./module"
+
+  name        = "checkpoint-automation"
+  description = "Checkpoint Automation is a project for automating tasks in the Checkpoint Firewall Security version R80.XX"
+
+  has_wiki = false
+}
+
+
+module "ansible_automation" {
+  source = "./module"
+
+  name        = "ansible-automation"
+  description = "This is a simple Ansible Automation project which contains several playbooks automating tasks across different platforms."
+
+  has_wiki = false
+}
