@@ -14,6 +14,9 @@ resource "github_branch_default" "main" {
 
 # Add branch protection to main
 resource "github_branch_protection" "main" {
+
+  count = var.enable_branch_protection ? 1 : 0
+
   repository_id  = github_repository.this.node_id
   pattern        = var.main_branch
   enforce_admins = false

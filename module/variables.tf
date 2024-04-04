@@ -1,14 +1,17 @@
-variable "repository_name" {
-  type = string
+variable "name" {
+  type        = string
+  description = "The name of the repository."
 }
 
-variable "repository_description" {
-  type = string
+variable "description" {
+  type        = string
+  description = "The description of the repository."
 }
 
-variable "repository_visibility" {
-  type    = string
-  default = "public"
+variable "visibility" {
+  type        = string
+  description = "The visibility of the repository. Can be public or private."
+  default     = "public"
 }
 
 variable "main_branch" {
@@ -27,4 +30,10 @@ variable "gitignore_template" {
   type        = string
   description = "The template to use for the .gitignore file"
   default     = "Terraform"
+}
+
+variable "enable_branch_protection" {
+  type        = bool
+  description = "Whether to enable branch protection or not"
+  default     = true
 }
