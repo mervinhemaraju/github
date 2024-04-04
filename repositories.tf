@@ -263,3 +263,39 @@ module "ansible_automation" {
 
   has_wiki = false
 }
+
+module "fortweet" {
+  source = "./module"
+
+  name        = "fortweet"
+  description = "The Fortweet project consists of a Dynamic Web App and a Static API which capture live tweets of Twitter, for a certain amount of time, about the online Battle Royale game Fortnite"
+
+  has_wiki = false
+}
+
+module "locky" {
+  source = "./module"
+
+  name        = "locky"
+  description = "This is the official Github Repo of Locky, an offline Material Design Password Manager for Android"
+
+  has_wiki = false
+}
+
+module "mauritius_emergency_service_api_go" {
+  source = "./module"
+
+  name        = "mauritius-emergency-service-api-go"
+  description = "Mauritius Emergency Services is an API built in GO that provides a list of emergency phone services in Mauritius."
+
+  has_wiki = false
+}
+
+module "prometheus" {
+  source = "./module"
+
+  name        = "prometheus"
+  description = "Prometheus is my virtual private server hosted on Digital Ocean"
+
+  has_wiki = false
+}
