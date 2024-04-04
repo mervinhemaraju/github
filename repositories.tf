@@ -1,19 +1,29 @@
 module "oci_iac_gaia" {
   source = "./module"
 
-  repository_name        = "oci-iac-gaia"
-  repository_description = "This is the IAC repository for OCI infrastructure codenamed GAIA"
+  name        = "oci-iac-gaia"
+  description = "This is the IAC repository for OCI infrastructure codenamed GAIA"
 
   has_wiki = true
 }
 
-module "oci_scripts" {
+module "mervinhemaraju" {
   source = "./module"
 
-  repository_name        = "oci-scripts"
-  repository_description = "Scripts to facilitate management of resources via OCI"
+  name        = "mervinhemaraju"
+  description = "This is my GitHub profile."
 
-  gitignore_template = "Python"
+  has_wiki = false
+}
+
+module "spacelift" {
+  source = "./module"
+
+  name        = "spacelift"
+  description = "The repository that contains the IaC for Spacelift"
+  visibility  = "private"
+
+  enable_branch_protection = false
 
   has_wiki = false
 }

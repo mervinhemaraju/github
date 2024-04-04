@@ -1,8 +1,8 @@
 # Create a Github repository
 resource "github_repository" "this" {
-  name        = var.repository_name
-  description = var.repository_description
-  visibility  = var.repository_visibility
+  name        = var.name
+  description = var.description
+  visibility  = var.visibility
 
   has_issues      = false
   has_discussions = false
