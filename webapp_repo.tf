@@ -13,7 +13,8 @@ module "portfolio" {
   name        = "portfolio"
   description = "This is my portfolio website that describes myself and my career path"
 
-  has_wiki = false
+  has_wiki  = false
+  has_pages = true
 }
 
 module "mauritius_emergency_service_api_go" {

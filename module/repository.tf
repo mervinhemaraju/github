@@ -22,4 +22,15 @@ resource "github_repository" "this" {
   allow_update_branch  = true
   vulnerability_alerts = true
 
+  dynamic "pages" {
+
+    for_each = var.has_pages ? [1] : []
+    content {
+      source {
+        branch = "main"
+        path   = "/"
+      }
+    }
+  }
+
 }
