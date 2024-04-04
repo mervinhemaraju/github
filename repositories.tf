@@ -81,3 +81,72 @@ module "mo_bizin_travay" {
 
   has_wiki = false
 }
+
+module "module_terraform_aws_lambda" {
+  source = "./module"
+
+  name        = "module-terraform-aws-lambda"
+  description = "A terraform module for AWS Lambda functions."
+
+  has_wiki = false
+}
+
+module "oci_iac_helios" {
+  source = "./module"
+
+  name        = "oci-iac-helios"
+  description = "This is the IAC repository for OCI infrastructure codenamed Helios."
+
+  has_wiki = false
+}
+
+module "module_terraform_spacelift_stack" {
+  source = "./module"
+
+  name        = "module-terraform-spacelift-stack"
+  description = "A terraform module for Spacelift stacks"
+
+  has_wiki = false
+}
+
+module "client_krish_municipality_web" {
+  source = "./module"
+
+  name        = "client-krish-municipality-web"
+  description = "This project is for a client that wants to reimagine the municipality's web app."
+
+  visibility = "private"
+
+  has_wiki = false
+}
+
+module "hawkeye" {
+  source = "./module"
+
+  name        = "hawkeye"
+  description = "Hawkeye is an event monitoring tool that captures records about specific AWS roles on AWS and then sends them in real-time on a Slack Channel."
+
+  visibility = "private"
+
+  has_wiki = false
+}
+
+module "spacelift_runner_image" {
+  source = "./module"
+
+  name        = "spacelift-runner-image"
+  description = "The custom runner image for my Spacelift stacks."
+
+  has_wiki = false
+}
+
+module "mauritius_retail_store_api" {
+  source = "./module"
+
+  name        = "mauritius-retail-store-api"
+  description = "The API that centralizes products from main retail stores in Mauritius"
+
+  visibility = "private"
+
+  has_wiki = false
+}
