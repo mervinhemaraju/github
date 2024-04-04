@@ -115,7 +115,8 @@ module "client_krish_municipality_web" {
   name        = "client-krish-municipality-web"
   description = "This project is for a client that wants to reimagine the municipality's web app."
 
-  visibility = "private"
+  visibility               = "private"
+  enable_branch_protection = false
 
   has_wiki = false
 }
@@ -127,6 +128,8 @@ module "hawkeye" {
   description = "Hawkeye is an event monitoring tool that captures records about specific AWS roles on AWS and then sends them in real-time on a Slack Channel."
 
   visibility = "private"
+
+  enable_branch_protection = false
 
   has_wiki = false
 }
@@ -147,6 +150,8 @@ module "mauritius_retail_store_api" {
   description = "The API that centralizes products from main retail stores in Mauritius"
 
   visibility = "private"
+
+  enable_branch_protection = false
 
   has_wiki = false
 }
