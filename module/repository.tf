@@ -26,9 +26,11 @@ resource "github_repository" "this" {
 
     for_each = var.has_pages ? [1] : []
     content {
+
+      cname = var.pages_cname
       source {
-        branch = "main"
-        path   = "/"
+        branch = var.pages_branch
+        path   = var.pages_path
       }
     }
   }
