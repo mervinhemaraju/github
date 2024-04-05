@@ -73,3 +73,18 @@ module "client_fadil_supermarket_app" {
 
   has_wiki = false
 }
+
+
+module "cloud_compute_configurations" {
+  source = "./module"
+
+  name        = "cloud-compute-configurations"
+  description = "This repo contains the configurations for my compute instances on Cloud."
+
+  visibility               = "private"
+  enable_branch_protection = false
+
+  gitignore_template = "None"
+
+  has_wiki = false
+}
