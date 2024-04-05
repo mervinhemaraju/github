@@ -84,7 +84,5 @@ module "cloud_compute_configurations" {
   visibility               = "private"
   enable_branch_protection = false
 
-  gitignore_template = "None"
-
   has_wiki = false
 }
