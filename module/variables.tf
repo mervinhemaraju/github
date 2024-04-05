@@ -43,3 +43,21 @@ variable "has_pages" {
   description = "Whether to enable GitHub Pages or not"
   default     = false
 }
+
+variable "pages_path" {
+  type        = string
+  description = "The path to the GitHub Pages content"
+  default     = "/"
+}
+
+variable "pages_branch" {
+  type        = string
+  description = "The branch to use for GitHub Pages"
+  default     = "main"
+}
+
+variable "pages_cname" {
+  type        = string
+  description = "The custom domain name for GitHub Pages"
+  default     = null
+}
