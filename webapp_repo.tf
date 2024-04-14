@@ -35,3 +35,12 @@ module "mauritius_emergency_service_api" {
 
   has_wiki = true
 }
+
+module "mongo_api" {
+  source = "./module"
+
+  name        = "mongo-api"
+  description = "Mongo API is the API that queries my self managed MongoDB database."
+
+  has_wiki = true
+}
