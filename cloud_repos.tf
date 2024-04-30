@@ -1,3 +1,12 @@
+module "oci_iac_poseidon" {
+  source = "./module"
+
+  name        = "oci-iac-poseidon"
+  description = "This is the IAC repository for OCI infrastructure codenamed POSEIDON."
+
+  has_wiki = true
+}
+
 module "oci_iac_gaia" {
   source = "./module"
 
