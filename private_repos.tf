@@ -10,6 +10,19 @@ module "spacelift" {
   has_wiki = false
 }
 
+module "cloudflare" {
+  source = "./module"
+
+  name        = "cloudflare"
+  description = "The repository that holds IAC for Cloudflare"
+  visibility  = "private"
+
+  enable_branch_protection = false
+
+  has_wiki = false
+}
+
+
 module "client_krish_municipality_web" {
   source = "./module"
 
