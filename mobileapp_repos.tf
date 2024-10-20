@@ -1,3 +1,12 @@
+module "puppet" {
+  source = "./module"
+
+  name        = "puppet"
+  description = "An android application that allows you to perform tasks based on custom events."
+
+  has_wiki = false
+}
+
 module "lockme" {
   source = "./module"
 
