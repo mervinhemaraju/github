@@ -17,6 +17,15 @@ module "multipurpose_scripts" {
   has_wiki = false
 }
 
+module "aws_iam_scanner" {
+  source = "./module"
+
+  name        = "aws-iam-scanner"
+  description = "This repository contains a tool to scan AWS IAM actions being used in python scripts and then outputs it into an IAM policy."
+
+  has_wiki = false
+}
+
 
 
 
