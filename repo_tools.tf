@@ -12,7 +12,7 @@ module "hawkeye" {
 module "okta_just_in_time" {
   source = "./module"
 
-  name        = "jit-tool-aws"
+  name        = "okta-jit-tool"
   description = "A JIT tool that will allow just in time access to okta groups."
 
   enable_branch_protection = false
