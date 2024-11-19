@@ -35,19 +35,6 @@ module "client_krish_municipality_web" {
   has_wiki = false
 }
 
-module "hawkeye" {
-  source = "./module"
-
-  name        = "hawkeye"
-  description = "Hawkeye is an event monitoring tool that captures records about specific AWS roles on AWS and then sends them in real-time on a Slack Channel."
-
-  visibility = "private"
-
-  enable_branch_protection = false
-
-  has_wiki = false
-}
-
 module "mauritius_retail_store_api" {
   source = "./module"
 
