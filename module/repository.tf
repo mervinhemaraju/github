@@ -23,7 +23,7 @@ resource "github_repository" "this" {
   vulnerability_alerts = true
 
   dynamic "security_and_analysis" {
-    for_each = var.visibility ? [1] : []
+    for_each = var.visibility == "public" ? [1] : []
 
     content {
       secret_scanning {
