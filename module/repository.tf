@@ -22,6 +22,20 @@ resource "github_repository" "this" {
   allow_update_branch  = true
   vulnerability_alerts = true
 
+  dynamic "security_and_analysis" {
+    for_each = var.visibility == "public" ? [1] : []
+
+    content {
+      secret_scanning {
+        status = "enabled"
+      }
+
+      secret_scanning_push_protection {
+        status = "enabled"
+      }
+    }
+  }
+
   dynamic "pages" {
 
     for_each = var.has_pages ? [1] : []

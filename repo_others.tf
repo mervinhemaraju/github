@@ -16,18 +16,3 @@ module "mervinhemaraju" {
 
   has_wiki = false
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
