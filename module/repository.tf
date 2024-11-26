@@ -22,15 +22,12 @@ resource "github_repository" "this" {
   allow_update_branch  = true
   vulnerability_alerts = true
   security_and_analysis {
-    advanced_security {
-      status = "enabled"
-    }
     secret_scanning {
-      status = "enabled"
+      status = var.visibility == "public" ? "enabled" : "disabled"
     }
 
     secret_scanning_push_protection {
-      status = "enabled"
+      status = var.visibility == "public" ? "enabled" : "disabled"
     }
   }
 
