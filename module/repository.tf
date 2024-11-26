@@ -21,13 +21,18 @@ resource "github_repository" "this" {
 
   allow_update_branch  = true
   vulnerability_alerts = true
-  security_and_analysis {
-    secret_scanning {
-      status = var.visibility == "public" ? "enabled" : "disabled"
-    }
 
-    secret_scanning_push_protection {
-      status = var.visibility == "public" ? "enabled" : "disabled"
+  dynamic "security_and_analysis" {
+    for_each = var.visibility ? [1] : []
+
+    content {
+      secret_scanning {
+        status = "enabled"
+      }
+
+      secret_scanning_push_protection {
+        status = "enabled"
+      }
     }
   }
 
