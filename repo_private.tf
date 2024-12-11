@@ -10,6 +10,18 @@ module "spacelift" {
   has_wiki = false
 }
 
+module "lockme" {
+  source = "./module"
+
+  name        = "lockme"
+  description = "An android application that allows you to lock your phone without using the physical button on your device."
+  visibility  = "private"
+
+  enable_branch_protection = false
+
+  has_wiki = false
+}
+
 module "cloudflare" {
   source = "./module"
 
