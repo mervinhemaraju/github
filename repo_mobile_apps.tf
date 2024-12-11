@@ -7,15 +7,6 @@ module "puppet" {
   has_wiki = false
 }
 
-module "lockme" {
-  source = "./module"
-
-  name        = "lockme"
-  description = "An android application that allows you to lock your phone without using the physical button on your device."
-
-  has_wiki = false
-}
-
 module "mes" {
   source = "./module"
 
