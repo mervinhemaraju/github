@@ -34,6 +34,24 @@ module "aws_iac_ares" {
   has_wiki = false
 }
 
+module "gcp_iac_hera" {
+  source = "./module"
+
+  name        = "gcp-iac-hera"
+  description = "This is the main IaC repository for GCP infrastructure codenamed Hera"
+
+  has_wiki = false
+}
+
+module "azure_iac_apollo" {
+  source = "./module"
+
+  name        = "azure-iac-apollo"
+  description = "This is the main IaC repository for Azure infrastructure codenamed Apollo"
+
+  has_wiki = false
+}
+
 module "prometheus" {
   source = "./module"
 
