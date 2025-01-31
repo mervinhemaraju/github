@@ -61,3 +61,9 @@ variable "pages_cname" {
   description = "The custom domain name for GitHub Pages"
   default     = null
 }
+
+variable "archived" {
+  type        = string
+  description = "Whether the repository is archived or not"
+  default     = "false"
+}
