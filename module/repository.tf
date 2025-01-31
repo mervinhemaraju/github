@@ -24,13 +24,15 @@ resource "github_repository" "this" {
 
   archive_on_destroy = true
   archived           = var.archived
-  security_and_analysis {
-    secret_scanning {
-      status = var.visibility == "public" ? "enabled" : "disabled"
-    }
-
-    secret_scanning_push_protection {
-      status = var.visibility == "public" ? "enabled" : "disabled"
+  dynamic "security_and_analysis" {
+    for_each = var.visibility == "public" ? [1] : []
+    content {
+      secret_scanning {
+        status = "enabled"
+      }
+      secret_scanning_push_protection {
+        status = "enabled"
+      }
     }
   }
 
