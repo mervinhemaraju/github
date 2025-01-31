@@ -1,12 +1,3 @@
-module "mes" {
-  source = "./module"
-
-  name        = "m.e.s"
-  description = "This is the official Github Repo of M.E.S (Mauritius Emergency Services), an Android application that has a list of all emergency phone services available in Mauritius."
-
-  has_wiki = false
-}
-
 module "locky" {
   source = "./module"
 
@@ -33,8 +24,9 @@ module "glamu" {
 
   name        = "glamu"
   description = "GlamU is a mobile application for Android and IOS, that allows booking appointments for beauty and fashion in Mauritius."
-
-  has_wiki = false
+  visibility  = "private"
 
   enable_branch_protection = false
+
+  has_wiki = false
 }

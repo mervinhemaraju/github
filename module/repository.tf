@@ -22,14 +22,14 @@ resource "github_repository" "this" {
   allow_update_branch  = true
   vulnerability_alerts = true
 
+  archive_on_destroy = true
+  archived           = var.archived
   dynamic "security_and_analysis" {
     for_each = var.visibility == "public" ? [1] : []
-
     content {
       secret_scanning {
         status = "enabled"
       }
-
       secret_scanning_push_protection {
         status = "enabled"
       }
