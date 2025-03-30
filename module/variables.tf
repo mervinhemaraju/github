@@ -21,9 +21,15 @@ variable "main_branch" {
 }
 
 variable "has_wiki" {
-  type        = string
+  type        = bool
   description = "Whether the repository has a wiki or not."
-  default     = "false"
+  default     = false
+}
+
+variable "is_template" {
+  type        = bool
+  description = "Whether the repository is a template or not."
+  default     = false
 }
 
 variable "gitignore_template" {

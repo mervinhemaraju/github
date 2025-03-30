@@ -10,7 +10,7 @@ resource "github_repository" "this" {
   has_projects    = false
   has_wiki        = var.has_wiki
 
-  is_template = false
+  is_template = var.is_template
 
   allow_merge_commit     = false
   allow_squash_merge     = true
