@@ -24,6 +24,17 @@ resource "github_repository" "this" {
 
   archive_on_destroy = true
   archived           = var.archived
+
+  dynamic "template" {
+
+    for_each = var.from_template != null ? [1] : []
+    content {
+      owner                = "mervinhemaraju"
+      repository           = var.from_template
+      include_all_branches = false
+    }
+  }
+
   dynamic "security_and_analysis" {
     for_each = var.visibility == "public" ? [1] : []
     content {

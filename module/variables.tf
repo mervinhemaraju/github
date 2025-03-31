@@ -26,6 +26,12 @@ variable "has_wiki" {
   default     = false
 }
 
+variable "from_template" {
+  type        = string
+  description = "The template to use for the repository"
+  default     = null
+}
+
 variable "is_template" {
   type        = bool
   description = "Whether the repository is a template or not."
