@@ -1,3 +1,14 @@
+module "certificates_renewal" {
+  source = "./module"
+
+  name        = "certificates-renewal"
+  description = "This repository contains scripts and services to renew SSL certificates for my own services."
+
+  enable_branch_protection = false
+
+  has_wiki = false
+}
+
 module "hawkeye" {
   source = "./module"
 
