@@ -1,7 +1,7 @@
 module "k8_poseidon" {
   source = "./module"
 
-  name        = "k8_poseidon"
+  name        = "k8-poseidon"
   description = "Repo that contains the Kubernetes files that helps to manage the Kubernetes cluster and resources hosted on cloud Poseidon."
 
   enable_branch_protection = false
