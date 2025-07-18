@@ -19,7 +19,5 @@ module "vercel_iac" {
   name        = "vercel-iac"
   description = "This is the main IaC repository for the application Vercel."
 
-  enable_branch_protection = false
-
   has_wiki = false
 }
