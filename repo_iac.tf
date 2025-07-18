@@ -11,3 +11,15 @@ module "glamu_iac" {
 
   has_wiki = false
 }
+
+
+module "vercel_iac" {
+  source = "./module"
+
+  name        = "vercel-iac"
+  description = "This is the main IaC repository for the application Vercel."
+
+  enable_branch_protection = false
+
+  has_wiki = false
+}
