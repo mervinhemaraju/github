@@ -34,7 +34,6 @@ module "cloudflare" {
   has_wiki = false
 }
 
-
 module "client_krish_municipality_web" {
   source = "./module"
 
@@ -86,12 +85,23 @@ module "client_fadil_supermarket_app" {
   has_wiki = false
 }
 
-
 module "cloud_compute_configurations" {
   source = "./module"
 
   name        = "cloud-compute-configurations"
   description = "This repo contains the configurations for my compute instances on Cloud."
+
+  visibility               = "private"
+  enable_branch_protection = false
+
+  has_wiki = false
+}
+
+module "ansible" {
+  source = "./module"
+
+  name        = "ansible"
+  description = "This repo contains all the configurations for my Ansible playbooks."
 
   visibility               = "private"
   enable_branch_protection = false
