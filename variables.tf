@@ -4,6 +4,7 @@
 variable "token_doppler_global" {
   type        = string
   description = "The Doppler token for all the secrets managers."
+  sensitive   = true
 }
 
 variable "bucket_key_prefix_iac" {

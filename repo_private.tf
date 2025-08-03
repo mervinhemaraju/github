@@ -96,15 +96,3 @@ module "cloud_compute_configurations" {
 
   has_wiki = false
 }
-
-module "ansible" {
-  source = "./module"
-
-  name        = "ansible"
-  description = "This repo contains all the configurations for my Ansible playbooks."
-
-  visibility               = "private"
-  enable_branch_protection = false
-
-  has_wiki = false
-}

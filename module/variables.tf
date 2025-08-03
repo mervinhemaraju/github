@@ -8,6 +8,17 @@ variable "description" {
   description = "The description of the repository."
 }
 
+variable "environment_secrets" {
+  description = "Map of environments with their secrets"
+  type = map(object({
+    prevent_self_review    = optional(bool, false)
+    protected_branches     = optional(bool, false)
+    custom_branch_policies = optional(bool, false)
+    secrets                = map(string)
+  }))
+  default = {}
+}
+
 variable "visibility" {
   type        = string
   description = "The visibility of the repository. Can be public or private."
