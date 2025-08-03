@@ -12,7 +12,7 @@ variable "environment_secrets" {
   description = "Map of environments with their secrets"
   type = map(object({
     prevent_self_review    = optional(bool, false)
-    protected_branches     = optional(bool, false)
+    protected_branches     = optional(bool, true)
     custom_branch_policies = optional(bool, false)
     secrets                = map(string)
   }))

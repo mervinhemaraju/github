@@ -5,9 +5,9 @@ resource "github_repository_environment" "this" {
   repository          = github_repository.this.name
   prevent_self_review = each.value.prevent_self_review
 
-  reviewers {
-    users = [data.github_user.current.id]
-  }
+  # reviewers {
+  #   users = []
+  # }
 
   deployment_branch_policy {
     protected_branches     = each.value.protected_branches
