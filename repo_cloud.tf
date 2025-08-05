@@ -1,3 +1,12 @@
+module "oci_iac_zeus" {
+  source = "./module"
+
+  name        = "oci-iac-zeus"
+  description = "This is the IAC repository for OCI infrastructure codenamed ZEUS."
+
+  has_wiki = true
+}
+
 module "oci_iac_poseidon" {
   source = "./module"
 
