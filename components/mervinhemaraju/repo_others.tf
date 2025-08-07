@@ -1,6 +1,6 @@
 
 module "spacelift_runner_image" {
-  source = "./module"
+  source = "../../module"
 
   name        = "spacelift-runner-image"
   description = "The custom runner image for my Spacelift stacks."
@@ -9,7 +9,7 @@ module "spacelift_runner_image" {
 }
 
 module "mervinhemaraju" {
-  source = "./module"
+  source = "../../module"
 
   name        = "mervinhemaraju"
   description = "This is my GitHub profile."

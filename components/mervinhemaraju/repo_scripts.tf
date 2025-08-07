@@ -1,5 +1,5 @@
 module "multipurpose_scripts" {
-  source = "./module"
+  source = "../../module"
 
   name        = "multipurpose-scripts"
   description = "This repository contains different quick scripts for different tasks and purposes."
@@ -8,7 +8,7 @@ module "multipurpose_scripts" {
 }
 
 module "aws_iam_scanner" {
-  source = "./module"
+  source = "../../module"
 
   name        = "aws-iam-scanner"
   description = "This repository contains a tool to scan AWS IAM actions being used in python scripts and then outputs it into an IAM policy."
@@ -17,7 +17,7 @@ module "aws_iam_scanner" {
 }
 
 module "launcher" {
-  source = "./module"
+  source = "../../module"
 
   name        = "launcher"
   description = "Launcher is a repo that holds code for all launcher scripts and tools that I use to quickly launch workflows on my resources."

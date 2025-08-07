@@ -1,5 +1,5 @@
 module "spacelift" {
-  source = "./module"
+  source = "../../module"
 
   name        = "spacelift"
   description = "The repository that contains the IaC for Spacelift"
@@ -11,7 +11,7 @@ module "spacelift" {
 }
 
 module "lockme" {
-  source = "./module"
+  source = "../../module"
 
   name        = "lockme"
   description = "An android application that allows you to lock your phone without using the physical button on your device."
@@ -23,7 +23,7 @@ module "lockme" {
 }
 
 module "cloudflare" {
-  source = "./module"
+  source = "../../module"
 
   name        = "cloudflare"
   description = "The repository that holds IAC for Cloudflare"
@@ -35,7 +35,7 @@ module "cloudflare" {
 }
 
 module "client_krish_municipality_web" {
-  source = "./module"
+  source = "../../module"
 
   name        = "client-krish-municipality-web"
   description = "This project is for a client that wants to reimagine the municipality's web app."
@@ -47,7 +47,7 @@ module "client_krish_municipality_web" {
 }
 
 module "mauritius_retail_store_api" {
-  source = "./module"
+  source = "../../module"
 
   name        = "mauritius-retail-store-api"
   description = "The API that centralizes products from main retail stores in Mauritius"
@@ -60,7 +60,7 @@ module "mauritius_retail_store_api" {
 }
 
 module "jeeyah" {
-  source = "./module"
+  source = "../../module"
 
   name        = "jeeyah"
   description = "The website for Jeeyah <3"
@@ -73,7 +73,7 @@ module "jeeyah" {
 }
 
 module "client_fadil_supermarket_app" {
-  source = "./module"
+  source = "../../module"
 
   name        = "client-fadil-supermarket-app"
   description = "This is a client project for Fadil from LBN who needs to build a simple console supermarket app with Python."
@@ -86,7 +86,7 @@ module "client_fadil_supermarket_app" {
 }
 
 module "cloud_compute_configurations" {
-  source = "./module"
+  source = "../../module"
 
   name        = "cloud-compute-configurations"
   description = "This repo contains the configurations for my compute instances on Cloud."

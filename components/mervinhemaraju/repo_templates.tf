@@ -1,5 +1,5 @@
 module "template_cloud_terraform_python" {
-  source = "./module"
+  source = "../../module"
 
   name        = "template-cloud-terraform-python"
   description = "A template for cloud projects using Terraform and Python."
@@ -8,7 +8,7 @@ module "template_cloud_terraform_python" {
 }
 
 module "template_cloud_terraform" {
-  source = "./module"
+  source = "../../module"
 
   name        = "template-cloud-terraform"
   description = "A template for cloud projects using Terraform."
@@ -17,7 +17,7 @@ module "template_cloud_terraform" {
 }
 
 module "template_mobile_flutter" {
-  source = "./module"
+  source = "../../module"
 
   name        = "template-mobile-flutter"
   description = "A template for mobile projects using Flutter."

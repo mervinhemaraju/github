@@ -1,5 +1,5 @@
 module "locky" {
-  source = "./module"
+  source = "../../module"
 
   name        = "locky"
   description = "This is the official Github Repo of Locky, an offline Material Design Password Manager for Android"
@@ -9,7 +9,7 @@ module "locky" {
 
 
 module "mauritius_emergency_services" {
-  source = "./module"
+  source = "../../module"
 
   name        = "mauritius-emergency-services"
   description = "This is the main Github Repo of M.E.S (Mauritius Emergency Services), a mobile application for Android and IOS, that provides information about emergency services in Mauritius."
@@ -20,7 +20,7 @@ module "mauritius_emergency_services" {
 }
 
 module "glamu" {
-  source = "./module"
+  source = "../../module"
 
   name        = "glamu"
   description = "GlamU is a mobile application for Android and IOS, that allows booking appointments for beauty and fashion in Mauritius."
@@ -33,7 +33,7 @@ module "glamu" {
 
 
 module "konekte" {
-  source = "./module"
+  source = "../../module"
 
   name        = "konekte"
   description = "Konekte is a mobile application for Android and IOS, that allows users to connect with each other in Mauritius."

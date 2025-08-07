@@ -1,6 +1,6 @@
 
 module "glamu_iac" {
-  source = "./module"
+  source = "../../module"
 
   name        = "glamu-iac"
   description = "This is the main IaC repository for the application GlamU."
@@ -13,7 +13,7 @@ module "glamu_iac" {
 }
 
 module "vercel_iac" {
-  source = "./module"
+  source = "../../module"
 
   name        = "vercel-iac"
   description = "This is the main IaC repository for the application Vercel."
@@ -22,7 +22,7 @@ module "vercel_iac" {
 }
 
 module "auth0_iac" {
-  source = "./module"
+  source = "../../module"
 
   name        = "auth0-iac"
   description = "This is the main IaC repository for the application Auth0."

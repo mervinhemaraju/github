@@ -1,5 +1,5 @@
 module "oci_iac_zeus" {
-  source = "./module"
+  source = "../../module"
 
   name        = "oci-iac-zeus"
   description = "This is the IAC repository for OCI infrastructure codenamed ZEUS."
@@ -8,7 +8,7 @@ module "oci_iac_zeus" {
 }
 
 module "oci_iac_poseidon" {
-  source = "./module"
+  source = "../../module"
 
   name        = "oci-iac-poseidon"
   description = "This is the IAC repository for OCI infrastructure codenamed POSEIDON."
@@ -17,7 +17,7 @@ module "oci_iac_poseidon" {
 }
 
 module "oci_iac_gaia" {
-  source = "./module"
+  source = "../../module"
 
   name        = "oci-iac-gaia"
   description = "This is the IAC repository for OCI infrastructure codenamed GAIA"
@@ -26,7 +26,7 @@ module "oci_iac_gaia" {
 }
 
 module "oci_iac_helios" {
-  source = "./module"
+  source = "../../module"
 
   name        = "oci-iac-helios"
   description = "This is the IAC repository for OCI infrastructure codenamed Helios."
@@ -35,7 +35,7 @@ module "oci_iac_helios" {
 }
 
 module "aws_iac_ares" {
-  source = "./module"
+  source = "../../module"
 
   name        = "aws-iac-ares"
   description = "This is the IAC repository for AWS infrastructure codenamed Ares"
@@ -44,7 +44,7 @@ module "aws_iac_ares" {
 }
 
 module "gcp_iac_hera" {
-  source = "./module"
+  source = "../../module"
 
   name        = "gcp-iac-hera"
   description = "This is the main IaC repository for GCP infrastructure codenamed Hera"
@@ -53,7 +53,7 @@ module "gcp_iac_hera" {
 }
 
 module "azure_iac_apollo" {
-  source = "./module"
+  source = "../../module"
 
   name        = "azure-iac-apollo"
   description = "This is the main IaC repository for Azure infrastructure codenamed Apollo"
@@ -62,7 +62,7 @@ module "azure_iac_apollo" {
 }
 
 module "prometheus" {
-  source = "./module"
+  source = "../../module"
 
   name        = "prometheus"
   description = "Prometheus is my virtual private server hosted on Digital Ocean"

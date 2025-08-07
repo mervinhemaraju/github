@@ -1,6 +1,6 @@
 
 module "ldap3_ad_leavers" {
-  source = "./module"
+  source = "../../module"
 
   name        = "ldap3-ad-leavers"
   description = "This is an extension of the ldap3 library which provides utilities to off board a user from AD."
@@ -9,7 +9,7 @@ module "ldap3_ad_leavers" {
 }
 
 module "freshservice_sdk_python" {
-  source = "./module"
+  source = "../../module"
 
   name        = "freshservice-sdk-python"
   description = "It is an unofficial Freshservice SDK written in Python."
@@ -18,7 +18,7 @@ module "freshservice_sdk_python" {
 }
 
 module "snappy" {
-  source = "./module"
+  source = "../../module"
 
   name        = "snappy"
   description = "Snappy is a Python library that facilitates taking snapshots on EBS."
@@ -27,7 +27,7 @@ module "snappy" {
 }
 
 module "freshtasks" {
-  source = "./module"
+  source = "../../module"
 
   name        = "freshtasks"
   description = "Freshtasks is a python library that facilitates the manipulation of tasks associated with Freshservice"

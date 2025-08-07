@@ -1,5 +1,5 @@
 module "checkpoint_automation" {
-  source = "./module"
+  source = "../../module"
 
   name        = "checkpoint-automation"
   description = "Checkpoint Automation is a project for automating tasks in the Checkpoint Firewall Security version R80.XX"
@@ -9,7 +9,7 @@ module "checkpoint_automation" {
 }
 
 module "ansible_automation" {
-  source = "./module"
+  source = "../../module"
 
   name        = "ansible-automation"
   description = "This is a simple Ansible Automation project which contains several playbooks automating tasks across different platforms."
@@ -19,7 +19,7 @@ module "ansible_automation" {
 }
 
 module "fortweet" {
-  source = "./module"
+  source = "../../module"
 
   name        = "fortweet"
   description = "The Fortweet project consists of a Dynamic Web App and a Static API which capture live tweets of Twitter, for a certain amount of time, about the online Battle Royale game Fortnite"
