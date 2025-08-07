@@ -1,5 +1,5 @@
 module "launcher" {
-  source = "../../module"
+  source = "../../../module"
 
   name        = "launcher"
   description = "Launcher is a repo that holds code for all scripts and tools that I use to quickly launch workflows on my resources."
