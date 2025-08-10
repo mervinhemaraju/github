@@ -9,10 +9,10 @@ resource "github_repository_environment" "this" {
   #   users = []
   # }
 
-  deployment_branch_policy {
-    protected_branches     = each.value.protected_branches
-    custom_branch_policies = each.value.custom_branch_policies
-  }
+  # deployment_branch_policy {
+  #   protected_branches     = each.value.protected_branches
+  #   custom_branch_policies = each.value.custom_branch_policies
+  # }
 }
 
 # Create secrets for each environment
