@@ -4,7 +4,9 @@ module "launcher" {
   name        = "launcher"
   description = "Launcher is a repo that holds code for all scripts and tools that I use to quickly launch workflows on my resources."
 
-  enable_branch_protection = true
+  visibility = "private"
+
+  enable_branch_protection = false
 
   environment_secrets = {
     production = {
