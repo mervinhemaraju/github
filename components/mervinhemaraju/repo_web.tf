@@ -7,16 +7,6 @@ module "mo_bizin_travay" {
   has_wiki = false
 }
 
-module "portfolio" {
-  source = "../../module"
-
-  name        = "portfolio"
-  description = "This is my portfolio website that describes myself and my career path"
-
-  has_wiki  = false
-  has_pages = false
-}
-
 module "mauritius_emergency_service_api_go" {
   source = "../../module"
 
@@ -42,4 +32,57 @@ module "mongo_api" {
   description = "Mongo API is the API that queries my self managed MongoDB database."
 
   has_wiki = true
+}
+
+########### Private Repos ###########
+module "web_atwopiecestory" {
+  source = "../../../module"
+
+  name        = "web-atwopiecestory"
+  description = "The A Two Piece Story website that provides information about our bikini shop"
+
+  visibility = "private"
+
+  enable_branch_protection = false
+
+  has_wiki = false
+}
+
+module "web_lockme" {
+  source = "../../../module"
+
+  name        = "web-lockme"
+  description = "The Lockme website application that provides information about the Lockme Mobile Application."
+
+  visibility = "private"
+
+  enable_branch_protection = false
+
+  has_wiki = false
+}
+
+module "web_plagueworks" {
+  source = "../../../module"
+
+  name        = "web-plagueworks"
+  description = "The plagueworks portfolio website."
+
+  visibility = "private"
+
+  enable_branch_protection = false
+
+  has_wiki = false
+}
+
+module "web_portfolio" {
+  source = "../../../module"
+
+  name        = "web-portfolio"
+  description = "My portfolio website."
+
+  visibility = "private"
+
+  enable_branch_protection = false
+
+  has_wiki = false
 }
