@@ -36,7 +36,7 @@ module "mongo_api" {
 
 ########### Private Repos ###########
 module "web_atwopiecestory" {
-  source = "../../../module"
+  source = "../../module"
 
   name        = "web-atwopiecestory"
   description = "The A Two Piece Story website that provides information about our bikini shop"
@@ -49,7 +49,7 @@ module "web_atwopiecestory" {
 }
 
 module "web_lockme" {
-  source = "../../../module"
+  source = "../../module"
 
   name        = "web-lockme"
   description = "The Lockme website application that provides information about the Lockme Mobile Application."
@@ -62,7 +62,7 @@ module "web_lockme" {
 }
 
 module "web_plagueworks" {
-  source = "../../../module"
+  source = "../../module"
 
   name        = "web-plagueworks"
   description = "The plagueworks portfolio website."
@@ -75,10 +75,24 @@ module "web_plagueworks" {
 }
 
 module "web_portfolio" {
-  source = "../../../module"
+  source = "../../module"
 
   name        = "web-portfolio"
   description = "My portfolio website."
+
+  visibility = "private"
+
+  enable_branch_protection = false
+
+  has_wiki = false
+}
+
+
+module "web_jeeyah" {
+  source = "../../module"
+
+  name        = "web_jeeyah"
+  description = "The website for Jeeyah <3"
 
   visibility = "private"
 

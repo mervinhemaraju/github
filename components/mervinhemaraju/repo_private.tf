@@ -59,19 +59,6 @@ module "mauritius_retail_store_api" {
   has_wiki = false
 }
 
-module "jeeyah" {
-  source = "../../module"
-
-  name        = "jeeyah"
-  description = "The website for Jeeyah <3"
-
-  visibility = "private"
-
-  enable_branch_protection = false
-
-  has_wiki = false
-}
-
 module "client_fadil_supermarket_app" {
   source = "../../module"
 
