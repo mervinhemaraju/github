@@ -91,7 +91,7 @@ module "web_portfolio" {
 module "web_jeeyah" {
   source = "../../module"
 
-  name        = "web_jeeyah"
+  name        = "web-jeeyah"
   description = "The website for Jeeyah <3"
 
   visibility = "private"
