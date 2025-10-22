@@ -100,3 +100,16 @@ module "web_jeeyah" {
 
   has_wiki = false
 }
+
+module "web_mes" {
+  source = "../../module"
+
+  name        = "web-mes"
+  description = "The website for Mauritius Emergency Services application."
+
+  visibility = "private"
+
+  enable_branch_protection = false
+
+  has_wiki = false
+}
